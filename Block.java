@@ -14,8 +14,8 @@ public class Block {
     public Block(int previousHash, String[] transactions) {
         this.previousHash = previousHash;
         this.transactions = transactions;
-        
-				// Questo è un oggetto contenitore che unisce l'hash del blocco precedente con le transazioni di questo blocco
+	    
+	 // Questo Ã¨ un oggetto contenitore che unisce l'hash del blocco precedente con le transazioni di questo blocco
         Object[] contens = {previousHash, Arrays.hashCode(transactions)};
         
         this.blockHash = Arrays.hashCode(contens);
